@@ -1,7 +1,7 @@
 # TodoMVC - For Chrome Extensions
 
 #### A fork of ToDoMVC to allow developers to test if popular JavaScript MV* frameworks work in Chrome Extensions with manifest v2, and the new Content Security Policies.
-
+[http://code.google.com/p/chromium/issues/detail?id=107538](http://code.google.com/p/chromium/issues/detail?id=107538)
 
 
 # TodoMVC
