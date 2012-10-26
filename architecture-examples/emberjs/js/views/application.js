@@ -33,7 +33,8 @@
 			classNameBindings: [ 'visibility:hidden' ],
 			childViews: [ 'outletView', 'markAllChkbox' ],
 			outletView: Ember.View.create({
-				template: Ember.Handlebars.compile( '{{outlet}}' ),
+//		  template: Ember.Handlebars.compile( '{{outlet}}' ),
+        template: Handlebars.templates.outlet,
 			}),
 			markAllChkbox: Ember.Checkbox.create({
 				entriesBinding: 'controller.namespace.entriesController',
@@ -51,14 +52,16 @@
 				entriesBinding: 'controller.namespace.entriesController',
 				elementId: 'todo-count',
 				tagName: 'span',
-				templateName: 'statsTemplate',
+//		  templateName: 'statsTemplate',
+        template: Handlebars.templates.statsTemplate,
 				oneLeft: function() {
 					return this.getPath( 'entries.remaining' ) === 1;
 				}.property( 'entries.remaining' )
 			}),
 			filtersView: Ember.View.create({
-				templateName: 'filtersTemplate',
-				filterBinding: 'controller.namespace.entriesController.filterBy',
+//			templateName: 'filtersTemplate',
+        template: Handlebars.templates.filtersTemplate,
+			  filterBinding: 'controller.namespace.entriesController.filterBy',
 				isAll: function() {
 					return Ember.empty( this.get('filter') );
 				}.property( 'filter' ),
@@ -71,7 +74,8 @@
 			}),
 			clearBtnView: Ember.View.create({
 				entriesBinding: 'controller.namespace.entriesController',
-				templateName: 'clearBtnTemplate',
+//      templateName: 'clearBtnTemplate',
+        template: Handlebars.templates.clearBtnTemplate,
 				elementId: 'clear-completed',
 				buttonClass: function () {
 					return !this.getPath( 'entries.completed' );

@@ -21,45 +21,8 @@
 		</p>
 		<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
 	</footer>
-	<!-- /* Handlebars templates start */ -->
-	<script id="statsTemplate" type="text/x-handlebars">
-		{{#with view}}
-			{{#if oneLeft }}
-				<strong>{{entries.remaining}}</strong> item left
-			{{else}}
-				<strong>{{entries.remaining}}</strong> items left
-			{{/if}}
-		{{/with}}
-	</script>
-	<script id="filtersTemplate" type="text/x-handlebars">
-		<ul id="filters">
-			<li>
-				<a {{action showAll href=true}} {{bindAttr class="view.isAll:selected"}}>All</a>
-			</li>
-			<li>
-				<a {{action showActive href=true}} {{bindAttr class="view.isActive:selected"}}>Active</a>
-			</li>
-			<li>
-				<a {{action showCompleted href=true}} {{bindAttr class="view.isCompleted:selected"}}>Completed</a>
-			</li>
-		</ul>
-	</script>
-	<script id="clearBtnTemplate" type="text/x-handlebars">
-		{{#with view}}
-			<button {{action "clearCompleted" target="entries"}} {{bindAttr class="buttonClass:hidden"}} >
-				Clear completed ({{entries.completed}})
-			</button>
-		{{/with}}
-	</script>
-	<script id="todosTemplate" type="text/x-handlebars">
-		{{#unless view.content.editing}}
-			{{view Ember.Checkbox checkedBinding="view.content.completed" class="toggle"}}
-			<label>{{view.content.title}}</label>
-			<button {{action removeItem target="this"}} class="destroy" ></button>
-		{{else}}
-			{{view view.ItemEditorView contentBinding="view.content"}}
-		{{/unless}}
-	</script>
+	<!-- /* Handlebars templates see templates folder */ -->
+	
 	<script>
 	// Workaround until Ember 1.0 is released
 	var ENV = {'FORCE_JQUERY': true};
@@ -68,7 +31,8 @@
 	<script src="../../assets/base.js"></script>
 	<script src="../../assets/jquery.min.js"></script>
 	<script src="../../assets/handlebars.min.js"></script>
-	<script src="js/libs/ember-latest.js"></script>
+  <script src="js/libs/compiled_handlebars.js"></script>
+  <script src="js/libs/ember-latest.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/router.js"></script>
 	<script src="js/models/todo.js"></script>
