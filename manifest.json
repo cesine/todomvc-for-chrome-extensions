@@ -1,0 +1,19 @@
+{
+  "name": "ToDoMVC - In Chrome Extensions",
+  "version": "1.1",
+  "description": "Helping you select an MV* framework for Chrome Extensions - Todo apps for Backbone.js, Ember.js, AngularJS, Spine and many more",
+  
+  "app": {
+    "launch": {
+      "local_path": "index.html"
+    }
+  },
+  "offline_enabled": true,
+  "permissions": [
+    "unlimitedStorage"
+  ],
+   "icons": { 
+  },
+   "manifest_version" : 2,
+  "content_security_policy" : "default-src 'self' ;"
+}
