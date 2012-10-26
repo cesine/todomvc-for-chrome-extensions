@@ -3,6 +3,30 @@
 #### A fork of ToDoMVC to allow developers to test if popular JavaScript MV* frameworks work in Chrome Extensions with manifest v2, and the new Content Security Policies.
 [http://code.google.com/p/chromium/issues/detail?id=107538](http://code.google.com/p/chromium/issues/detail?id=107538)
 
+#### Works out of the ToDoMVC box!
+- [Agility.js](http://agilityjs.com/)
+- Vanilla JS
+- Batman.js
+
+#### Works if you change to precompiled templates
+- [Backbone.js](http://documentcloud.github.com/backbone/)
+- [Ember.js](http://emberjs.com/)
+- [Knockback.js](http://kmalakoff.github.com/knockback/)
+- [Spine.js](http://spinejs.com/) 
+
+#### Will not work without an eval workaround
+- [Dojo](http://dojotoolkit.org/) - no plan to remove evals
+- [KnockoutJS](http://knockoutjs.com/) (MVVM) - no plan to remove evals
+- [AngularJS](http://angularjs.org/) - library uses eval
+
+#### Needs a workaround from someone who knows the framework before it will work in a Chrome Extension
+- GWT - inline-script : example creates a script tag on the fly
+- [Closure](http://code.google.com/closure/library/) - example uses eval, but might not be neccesary
+- [YUILibrary](http://yuilibrary.com/) - example is pulling from non-https servers
+- jQuery
+
+
+
 
 # TodoMVC
 
