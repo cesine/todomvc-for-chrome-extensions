@@ -7,7 +7,7 @@
 - [Agility.js](http://agilityjs.com/)
 - Vanilla JS
 - Batman.js
-- [AngularJS](http://angularjs.org/) - [if you add ng-csp to your <html> tag](https://github.com/angular/angular.js/wiki/Using-AngularJS-in-a-Chrome-Extension-environment) 
+- [AngularJS](http://angularjs.org/) - [if you add ng-csp ](https://github.com/angular/angular.js/wiki/Using-AngularJS-in-a-Chrome-Extension-environment) 
 
 #### Works if you change to precompiled templates
 - [Backbone.js](http://documentcloud.github.com/backbone/)
