@@ -9,7 +9,7 @@
 - Batman.js
 - [AngularJS](http://angularjs.org/) - [if you add ng-csp ](https://github.com/angular/angular.js/wiki/Using-AngularJS-in-a-Chrome-Extension-environment) 
 
-#### Works if you change to precompiled templates
+#### Works if you change to precompiled templates or use an eval workaround
 - [Backbone.js](http://documentcloud.github.com/backbone/)
 - [Ember.js](http://emberjs.com/)
 - [Knockback.js](http://kmalakoff.github.com/knockback/)
