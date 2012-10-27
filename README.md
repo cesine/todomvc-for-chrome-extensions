@@ -7,6 +7,7 @@
 - [Agility.js](http://agilityjs.com/)
 - Vanilla JS
 - Batman.js
+- [AngularJS](http://angularjs.org/) - [if you add ng-csp to your <html> tag](https://github.com/angular/angular.js/wiki/Using-AngularJS-in-a-Chrome-Extension-environment) 
 
 #### Works if you change to precompiled templates
 - [Backbone.js](http://documentcloud.github.com/backbone/)
@@ -17,7 +18,6 @@
 #### Will not work without an eval workaround
 - [Dojo](http://dojotoolkit.org/) - no plan to remove evals
 - [KnockoutJS](http://knockoutjs.com/) (MVVM) - no plan to remove evals
-- [AngularJS](http://angularjs.org/) - library uses eval
 
 #### Needs a workaround from someone who knows the framework before it will work in a Chrome Extension
 - GWT - inline-script : example creates a script tag on the fly
