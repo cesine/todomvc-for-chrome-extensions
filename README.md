@@ -14,16 +14,17 @@
 - [Ember.js](http://emberjs.com/)
 - [Knockback.js](http://kmalakoff.github.com/knockback/)
 - [Spine.js](http://spinejs.com/) 
+- jQuery example
 
 #### Will not work without an eval workaround
-- [Dojo](http://dojotoolkit.org/) - no plan to remove evals
-- [KnockoutJS](http://knockoutjs.com/) (MVVM) - no plan to remove evals
+- [Dojo](http://dojotoolkit.org/) - [no plan to remove evals](https://github.com/cesine/todomvc-for-chrome-extensions/issues/7)
+- [KnockoutJS](http://knockoutjs.com/) (MVVM) - [no plan to remove evals](https://github.com/cesine/todomvc-for-chrome-extensions/issues/6)
 
 #### Needs a workaround from someone who knows the framework before it will work in a Chrome Extension
 - GWT - inline-script : example creates a script tag on the fly
 - [Closure](http://code.google.com/closure/library/) - example uses eval, but might not be neccesary
 - [YUILibrary](http://yuilibrary.com/) - example is pulling from non-https servers
-- jQuery
+
 
 
 
